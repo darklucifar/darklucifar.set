@@ -1,0 +1,741 @@
+@charset "UTF-8";
+html {
+  height: 100%; }
+
+body {
+  font-family: "微軟正黑體","Microsoft JhengHei","DFHei",Arial;
+  background: url("../image/background.png") no-repeat;
+  overflow-x: hidden; }
+
+#main {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  background: url("../image/background_snow.png") no-repeat;
+  background-size: 100% 100%; }
+  #main .mainPic {
+    display: block;
+    background: url("../image/main.png") no-repeat;
+    background-size: 100%;
+    width: 1185px;
+    height: 100%;
+    margin: 0 auto; }
+    #main .mainPic .mainPic_mobile {
+      display: none; }
+    #main .mainPic .share {
+      float: right;
+      margin-top: 60px;
+      margin-right: 10px; }
+      #main .mainPic .share div {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px; }
+      #main .mainPic .share div:last-child {
+        margin-right: 0px; }
+      #main .mainPic .share #FB_share {
+        background: url("../image/FB.png") no-repeat;
+        background-size: 100%; }
+      #main .mainPic .share #vidolIG_link {
+        background: url("../image/instagram.png") no-repeat;
+        background-size: 100%; }
+      #main .mainPic .share #line_share {
+        background: url("../image/Line.png") no-repeat;
+        background-size: 100%; }
+      #main .mainPic .share #vidol-link {
+        background: url("../image/V_LOGO.png") no-repeat;
+        background-size: 100%; }
+    #main .mainPic .top {
+      margin: 0 auto;
+      padding-top: 56px;
+      width: 100%; }
+      #main .mainPic .top .logo {
+        display: inline-block;
+        background: url("../image/Vidol_logo_170x55.png") no-repeat;
+        background-size: 100%;
+        width: 170px;
+        height: 55px; }
+    #main .mainPic .content {
+      font-size: 18px;
+      text-align: center; }
+      #main .mainPic .content .des img {
+        width: 790px;
+        margin: 50px auto 20px auto; }
+      #main .mainPic .content .web {
+        display: block; }
+      #main .mainPic .content .mobile {
+        display: none; }
+    #main .mainPic .content#step1 {
+      display: block;
+      margin: 0 auto;
+      margin-top: 365px;
+      padding-bottom: 35px;
+      text-align: center; }
+      #main .mainPic .content#step1 img {
+        margin: 0 auto;
+        width: auto;
+        width: 64%; }
+      #main .mainPic .content#step1 .btn1 {
+        background: url("../image/Button01.png") no-repeat;
+        background-size: 100%;
+        width: 252px;
+        height: 95px;
+        margin: 0px auto;
+        margin-top: 9px; }
+      #main .mainPic .content#step1 .btn1:hover {
+        background-image: url("../image/Button01Y.png"); }
+    #main .mainPic .content#step2 {
+      display: none;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 365px;
+      color: #fff; }
+      #main .mainPic .content#step2 .des img {
+        width: 640px; }
+      #main .mainPic .content#step2 form {
+        width: 620px;
+        text-align: left;
+        margin: 0 auto;
+        font-size: 24px; }
+        #main .mainPic .content#step2 form span {
+          font-weight: bold;
+          letter-spacing: 9px;
+          color: yellow; }
+        #main .mainPic .content#step2 form div {
+          margin-top: 10px; }
+        #main .mainPic .content#step2 form input,
+        #main .mainPic .content#step2 form select {
+          border: 0;
+          width: 666px;
+          background-color: #bc2c35;
+          color: #fff;
+          border-radius: 0px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 20px; }
+        #main .mainPic .content#step2 form input {
+          padding-left: 20px; }
+        #main .mainPic .content#step2 form select {
+          text-align-last: center;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          background: url("../image/arrow.png") no-repeat right center transparent;
+          background-color: #bc2c35;
+          padding-right: 40px; }
+          #main .mainPic .content#step2 form select option {
+            margin: 40px;
+            background: rgba(255, 238, 17, 0.3);
+            color: #fff;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
+        #main .mainPic .content#step2 form select::-ms-expand {
+          display: none; }
+        #main .mainPic .content#step2 form input:focus,
+        #main .mainPic .content#step2 form select:focus {
+          outline: none; }
+        #main .mainPic .content#step2 form ::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: rgba(255, 255, 255, 0.5); }
+        #main .mainPic .content#step2 form :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: rgba(255, 255, 255, 0.5); }
+        #main .mainPic .content#step2 form ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: rgba(255, 255, 255, 0.5); }
+        #main .mainPic .content#step2 form :-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: rgba(255, 255, 255, 0.5); }
+        #main .mainPic .content#step2 form .name {
+          display: inline-block;
+          margin-right: 28px; }
+          #main .mainPic .content#step2 form .name input {
+            width: 260px; }
+        #main .mainPic .content#step2 form .sex {
+          display: inline-block;
+          vertical-align: top; }
+          #main .mainPic .content#step2 form .sex select {
+            width: 146px; }
+        #main .mainPic .content#step2 form .birthday select {
+          width: 146px; }
+        #main .mainPic .content#step2 form .phone input {
+          width: 442px; }
+        #main .mainPic .content#step2 form .phone .ic {
+          width: 90px;
+          margin-right: 8px;
+          text-align: center;
+          padding-left: 0; }
+        #main .mainPic .content#step2 form .address select {
+          margin-right: 8px;
+          width: 176px; }
+        #main .mainPic .content#step2 form .address #country {
+          width: 100px; }
+        #main .mainPic .content#step2 form .address #area {
+          margin-right: 0px; }
+        #main .mainPic .content#step2 form .address input {
+          width: 481px;
+          margin-left: 139px;
+          margin-top: 11px; }
+        #main .mainPic .content#step2 form .email span {
+          letter-spacing: normal;
+          margin-right: 10px; }
+        #main .mainPic .content#step2 form .email input {
+          width: 531px; }
+      #main .mainPic .content#step2 .btn2 {
+        background: url("../image/Button02.png") no-repeat;
+        width: 252px;
+        height: 95px;
+        background-size: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 30px; }
+      #main .mainPic .content#step2 .btn2:hover {
+        background-image: url("../image/Button02Y.png"); }
+    #main .mainPic .content#step3 {
+      display: none;
+      margin: 0 auto;
+      margin-top: 370px;
+      padding-bottom: 0px; }
+      #main .mainPic .content#step3 img {
+        margin: 0 auto;
+        width: auto; }
+      #main .mainPic .content#step3 .btn3 {
+        background: url("../image/Button03.png") no-repeat;
+        background-size: 100%;
+        width: 252px;
+        height: 95px;
+        margin: 0 auto;
+        margin-top: 51px;
+        margin-bottom: 34px; }
+      #main .mainPic .content#step3 .btn3:hover {
+        background-image: url("../image/Button03Y.png"); }
+    #main .mainPic .content#step4 {
+      display: none;
+      margin: 0 auto;
+      margin-top: 388px;
+      padding-bottom: 0px; }
+      #main .mainPic .content#step4 img {
+        margin: 0 auto;
+        width: auto; }
+      #main .mainPic .content#step4 .btn4 {
+        background: url("../image/Button03.png") no-repeat;
+        background-size: 100%;
+        width: 252px;
+        height: 95px;
+        margin: 0 auto;
+        margin-top: 85px;
+        margin-bottom: 34px; }
+      #main .mainPic .content#step4 .btn4:hover {
+        background-image: url("../image/Button03Y.png"); }
+
+.footer {
+  display: block;
+  background-color: #2684e9;
+  width: 100%; }
+  .footer .bg-white {
+    background-color: #fff;
+    position: relative;
+    height: 77px;
+    line-height: 77px; }
+    .footer .bg-white .content {
+      color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto; }
+      .footer .bg-white .content .left {
+        text-align: left; }
+      .footer .bg-white .content .right {
+        float: right; }
+
+@media screen and (max-width: 1366px) {
+  #main .mainPic {
+    width: 92vw; }
+    #main .mainPic .top {
+      padding-top: 4.099561vw; }
+      #main .mainPic .top .logo {
+        width: 12.445095vw;
+        height: 4.026354vw; }
+    #main .mainPic .content#step1 {
+      margin: 0 auto;
+      margin-top: 29.199219vw;
+      padding-bottom: 1.6vw; }
+      #main .mainPic .content#step1 img {
+        width: 60vw; }
+      #main .mainPic .content#step1 .btn1 {
+        width: 19.5vw;
+        height: 7.5vw;
+        margin-top: 0.4vw; }
+    #main .mainPic .content#step2 {
+      margin-top: 28.257687vw; }
+      #main .mainPic .content#step2 .des img {
+        width: 48.901903vw;
+        margin: 3.66vw auto 1.464129vw auto; }
+      #main .mainPic .content#step2 form {
+        width: 47.584187vw;
+        font-size: 1.756955vw; }
+        #main .mainPic .content#step2 form span {
+          letter-spacing: 0.658858vw; }
+        #main .mainPic .content#step2 form div {
+          margin-top: 0.878477vw; }
+        #main .mainPic .content#step2 form input,
+        #main .mainPic .content#step2 form select {
+          height: 2.562225vw;
+          line-height: 2.562225vw;
+          font-size: 1.610542vw; }
+        #main .mainPic .content#step2 form select {
+          padding-right: 2.928258vw; }
+          #main .mainPic .content#step2 form select option {
+            margin: 2.928258vw; }
+        #main .mainPic .content#step2 form .name {
+          margin-right: 2.04978vw; }
+          #main .mainPic .content#step2 form .name input {
+            width: 20.1vw; }
+        #main .mainPic .content#step2 form .sex select {
+          width: 11.25vw; }
+        #main .mainPic .content#step2 form .birthday select {
+          width: 11.25vw; }
+        #main .mainPic .content#step2 form .phone input {
+          width: 33.4vw; }
+        #main .mainPic .content#step2 form .phone .ic {
+          width: 7.32vw;
+          margin-right: 0.585652vw;
+          text-align: center;
+          padding-left: 0; }
+        #main .mainPic .content#step2 form .address select {
+          margin-right: 0.585652vw;
+          width: 13.5vw; }
+        #main .mainPic .content#step2 form .address #country {
+          width: 8.199122vw; }
+        #main .mainPic .content#step2 form .address #area {
+          margin-right: 0px; }
+        #main .mainPic .content#step2 form .address input {
+          width: 37.38vw;
+          margin-left: 10.175695vw;
+          margin-top: 0.805271vw; }
+        #main .mainPic .content#step2 form .email span {
+          margin-right: 0.732064vw; }
+        #main .mainPic .content#step2 form .email input {
+          width: 41.068vw; }
+      #main .mainPic .content#step2 .btn2 {
+        width: 18.448vw;
+        height: 6.954612vw;
+        margin-top: 1.756955vw;
+        margin-bottom: 2.5vw; }
+      #main .mainPic .content#step2 .btn2:hover {
+        background-image: url("../image/Button02Y.png"); }
+    #main .mainPic .content#step3 {
+      margin: 0 auto;
+      margin-top: 32.199219vw;
+      padding-bottom: 0px; }
+      #main .mainPic .content#step3 img {
+        width: 51vw; }
+      #main .mainPic .content#step3 .btn3 {
+        width: 18.448vw;
+        height: 6.954612vw;
+        margin-top: 3.8vw;
+        margin-bottom: 2.89vw; }
+    #main .mainPic .content#step4 {
+      margin: 0 auto;
+      margin-top: 32.199219vw;
+      padding-bottom: 0px; }
+      #main .mainPic .content#step4 img {
+        width: 51vw; }
+      #main .mainPic .content#step4 .btn4 {
+        width: 18.448vw;
+        height: 6.954612vw;
+        margin-top: 6.7vw;
+        margin-bottom: 2.75vw; }
+
+  .footer .bg-white .content .left {
+    margin-left: 3vw; }
+  .footer .bg-white .content .right {
+    margin-right: 3vw; } }
+@media screen and (max-width: 1366px) and (min-height: 1300px) {
+  body {
+    background-size: 100% 100%;
+    height: 100%; }
+
+  #main {
+    height: 100%;
+    background-repeat: repeat-y; }
+
+  .footer {
+    position: absolute;
+    bottom: 0px; } }
+@media screen and (max-width: 1023px) {
+  body {
+    height: 100%; }
+
+  .footer {
+    display: block; }
+    .footer .bg-white {
+      height: 11.328125vw;
+      line-height: 11.328125vw; }
+      .footer .bg-white .content .right {
+        display: none; }
+      .footer .bg-white .content .left {
+        margin-left: 5vw; }
+
+  #main {
+    background: url("../image/mobile/mo_background.png") no-repeat;
+    background-size: 100%; }
+    #main .mainPic {
+      background: url(../image/mobile/mo_main.png) no-repeat;
+      background-size: 100%;
+      background-position-y: 11vw;
+      width: 100%;
+      position: relative; }
+      #main .mainPic .share {
+        margin: 0px;
+        position: absolute;
+        right: 4vw;
+        bottom: -9vw;
+        z-index: 2; }
+        #main .mainPic .share #vidolIG_link,
+        #main .mainPic .share #vidol-link {
+          display: none; }
+        #main .mainPic .share #FB_share {
+          background: url("../image/mobile/mo_FB_2x.png") no-repeat;
+          background-size: 100%;
+          width: 7.3vw;
+          height: 7.3vw;
+          margin-right: 2.5vw; }
+        #main .mainPic .share #line_share {
+          background: url("../image/mobile/mo_Line_2x.png") no-repeat;
+          background-size: 100%;
+          width: 7.3vw;
+          height: 7.3vw;
+          margin-right: 0px; }
+      #main .mainPic .top {
+        margin: 0 auto;
+        padding-top: 5.729167vw;
+        width: 100%; }
+        #main .mainPic .top .logo {
+          display: inline-block;
+          background: url("../image/mobile/mo_Vidol_logo.png") no-repeat;
+          background-size: 100%;
+          width: 18vw;
+          height: 6.6vw;
+          margin-left: 5vw; }
+      #main .mainPic .content {
+        padding-bottom: 4vw; }
+        #main .mainPic .content .web {
+          display: none; }
+        #main .mainPic .content .mobile {
+          display: block; }
+      #main .mainPic .content#step1,
+      #main .mainPic .content#step3,
+      #main .mainPic .content#step4 {
+        margin: 0 auto;
+        margin-top: 55vw;
+        padding: 0px; }
+        #main .mainPic .content#step1 img,
+        #main .mainPic .content#step3 img,
+        #main .mainPic .content#step4 img {
+          margin: 0 auto;
+          width: 90%; }
+        #main .mainPic .content#step1 .btn1,
+        #main .mainPic .content#step3 .btn1,
+        #main .mainPic .content#step4 .btn1 {
+          background: url(../image/Button01.png) no-repeat;
+          background-size: 100%;
+          width: 41.66vw;
+          height: 14.84375vw;
+          margin: 0px auto;
+          margin-top: 7.291667vw;
+          margin-bottom: 5vw; }
+        #main .mainPic .content#step1 .btn1:hover,
+        #main .mainPic .content#step3 .btn1:hover,
+        #main .mainPic .content#step4 .btn1:hover {
+          background-image: url("../image/Button01Y.png"); }
+        #main .mainPic .content#step1 .ps,
+        #main .mainPic .content#step3 .ps,
+        #main .mainPic .content#step4 .ps {
+          font-size: 1.5vw; }
+      #main .mainPic .content#step3 .btn3 {
+        width: 41.66vw;
+        height: 14.84375vw;
+        margin-top: 23.5vw;
+        margin-bottom: 4.5vw; }
+      #main .mainPic .content#step4 {
+        margin-top: 69vw; }
+        #main .mainPic .content#step4 .btn4 {
+          width: 41.66vw;
+          height: 14.84375vw;
+          margin-top: 23.5vw;
+          margin-bottom: 4.5vw; }
+      #main .mainPic .content#step2 {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 55vw; }
+        #main .mainPic .content#step2 .des {
+          font-size: 2.34375vw; }
+          #main .mainPic .content#step2 .des img {
+            width: 74vw;
+            margin: 0 auto;
+            margin-left: 8.5vw; }
+        #main .mainPic .content#step2 form {
+          width: 83vw;
+          text-align: left;
+          margin: 0 auto;
+          margin-top: 1.953125vw;
+          font-size: 3.8vw; }
+          #main .mainPic .content#step2 form span {
+            font-weight: bold; }
+          #main .mainPic .content#step2 form div {
+            margin-top: 3.515625vw;
+            line-height: 5.20833vw; }
+          #main .mainPic .content#step2 form input,
+          #main .mainPic .content#step2 form select {
+            width: 40vw;
+            height: 5.20833vw;
+            line-height: 5.20833vw;
+            vertical-align: top;
+            font-size: 3.6vw; }
+          #main .mainPic .content#step2 form input {
+            padding-left: 2.604167vw; }
+          #main .mainPic .content#step2 form select {
+            text-align-last: center;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background-size: 4.5vw;
+            padding-right: 4.5vw; }
+          #main .mainPic .content#step2 form select::-ms-expand {
+            display: none; }
+          #main .mainPic .content#step2 form input:focus,
+          #main .mainPic .content#step2 form select:focus {
+            outline: none; }
+          #main .mainPic .content#step2 form ::-webkit-input-placeholder {
+            /* WebKit browsers */
+            color: rgba(255, 255, 255, 0.5); }
+          #main .mainPic .content#step2 form :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: rgba(255, 255, 255, 0.5); }
+          #main .mainPic .content#step2 form ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: rgba(255, 255, 255, 0.5); }
+          #main .mainPic .content#step2 form :-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: rgba(255, 255, 255, 0.5); }
+          #main .mainPic .content#step2 form .name {
+            display: inline-block;
+            margin-right: 2vw; }
+            #main .mainPic .content#step2 form .name input {
+              width: 40vw; }
+          #main .mainPic .content#step2 form .sex {
+            display: inline-block;
+            vertical-align: top; }
+            #main .mainPic .content#step2 form .sex select {
+              width: 12vw; }
+          #main .mainPic .content#step2 form .birthday select {
+            width: 18vw; }
+          #main .mainPic .content#step2 form .phone input {
+            width: 55.5vw; }
+          #main .mainPic .content#step2 form .phone .ic {
+            width: 15vw;
+            margin-right: 1.041667vw;
+            text-align: center;
+            padding-left: 0; }
+          #main .mainPic .content#step2 form .address select {
+            margin-right: 1.041667vw;
+            width: 22.8vw; }
+          #main .mainPic .content#step2 form .address #country {
+            width: 14vw; }
+          #main .mainPic .content#step2 form .address #area {
+            margin-right: 0px; }
+          #main .mainPic .content#step2 form .address input {
+            width: 64vw;
+            margin-left: 18.8vw;
+            margin-top: 2.604167vw; }
+          #main .mainPic .content#step2 form .email span {
+            letter-spacing: normal;
+            margin-right: 1.302083vw; }
+          #main .mainPic .content#step2 form .email input {
+            width: 69vw; }
+          #main .mainPic .content#step2 form .btn2 {
+            background: url("../image/Button02.png") no-repeat;
+            width: 39vw;
+            height: 14vw;
+            background-size: 100%;
+            margin: 0 auto;
+            margin-top: 11.5vw;
+            margin-bottom: 1.5vw; }
+          #main .mainPic .content#step2 form .btn2:hover {
+            background-image: url("../image/Button02Y.png"); } }
+@media screen and (max-width: 1023px) and (max-width: 500px) {
+  #main .mainPic .share {
+    right: 4vw;
+    bottom: -7vw; } }
+  @media screen and (max-width: 1023px) and (max-width: 500px) and (max-width: 375px) {
+    #main .mainPic .share {
+      right: 2vw;
+      bottom: -6vw; }
+      #main .mainPic .share #FB_share {
+        margin-right: 1.2vw; } }
+  @media screen and (max-width: 1023px) and (max-width: 500px) and (max-width: 320px) {
+    #main .mainPic .share {
+      right: 6vw;
+      top: 5vw;
+      bottom: unset; } }
+@media screen and (max-width: 1023px) and (max-width: 500px) {
+    #main .mainPic .share #FB_share,
+    #main .mainPic .share #line_share {
+      width: 7.3vw;
+      height: 7.3vw; }
+  #main .mainPic .content#step1 img,
+  #main .mainPic .content#step3 img,
+  #main .mainPic .content#step4 img {
+    margin: 0 auto;
+    width: 92vw; }
+  #main .mainPic .content#step1 .ps,
+  #main .mainPic .content#step3 .ps,
+  #main .mainPic .content#step4 .ps {
+    margin: 0 auto;
+    margin-top: 6.29429vw; }
+  #main .mainPic .content#step1 .btn1,
+  #main .mainPic .content#step3 .btn1,
+  #main .mainPic .content#step4 .btn1 {
+    margin: 0px auto;
+    margin-top: 5vw;
+    margin-bottom: 8vw; }
+  #main .mainPic .content#step3 img {
+    width: 90%; }
+  #main .mainPic .content#step3 .btn3 {
+    margin-top: 23vw;
+    margin-bottom: 7.3vw; }
+  #main .mainPic .content#step4 {
+    margin-top: 68vw; }
+    #main .mainPic .content#step4 img {
+      width: 90%; }
+    #main .mainPic .content#step4 .btn4 {
+      margin-top: 23vw;
+      margin-bottom: 8.3vw; }
+  #main .mainPic .content#step2 form .btn2 {
+    margin-top: 10.5vw;
+    margin-bottom: 4vw; }
+
+  .footer .bg-white {
+    top: -10px;
+    height: 12vw;
+    line-height: 12vw; }
+    .footer .bg-white .content {
+      font-size: 1vw; } }
+#loginBg {
+  display: none;
+  background-color: #310c0c;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  z-index: 1000;
+  opacity: 0.9;
+  z-index: 0;
+  width: 320px; }
+
+.ui-widget.ui-widget-content {
+  background-color: rgba(0, 0, 0, 0.82);
+  background-size: 190%;
+  background-position: 60% 33%; }
+
+.ui-draggable .ui-dialog-titlebar {
+  border: 0;
+  background: none;
+  background-size: 27%;
+  padding: 15px 0;
+  background: none;
+  padding: 0px; }
+
+.ui-dialog .ui-dialog-titlebar-close {
+  background-color: #000;
+  border-width: 0px;
+  margin-right: 10px; }
+
+.ui-dialog .ui-dialog-content {
+  padding: 30px 30px 50px; }
+
+.ui-button .ui-icon,
+.ui-button .ui-icon:hover {
+  width: 50px;
+  height: 50px;
+  background: url(../image/close.png) no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0; }
+
+.fbShare {
+  width: 340px;
+  margin: 0 auto; }
+
+#login input {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: 0;
+  border-bottom: solid 2px;
+  border-bottom-color: rgba(255, 255, 255, 0.33);
+  margin-top: 15px;
+  color: #fff; }
+#login .login_vidol {
+  background-color: #f4f224;
+  color: #000;
+  margin-top: 25px; }
+#login .line {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.33);
+  position: relative;
+  margin-top: 95px; }
+#login .or {
+  color: #c1c1c1;
+  width: 37px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: -12px; }
+#login .text {
+  text-align: center !important; }
+  #login .text span a {
+    color: #fff !important; }
+
+#login input {
+  width: 100%;
+  height: 40px; }
+
+.login_vidol {
+  background-color: #c32435;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  -webkit-appearance: none;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.1em;
+  cursor: pointer; }
+
+.or {
+  width: 100%;
+  text-align: center; }
+
+.login_facebook {
+  background-color: #3b5998;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  -webkit-appearance: none;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.1em;
+  cursor: pointer; }
+
+/*# sourceMappingURL=index.css.map */
