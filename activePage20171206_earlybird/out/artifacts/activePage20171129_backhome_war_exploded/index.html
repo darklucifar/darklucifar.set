@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <title>Vidol早鳥專案</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="og:description" content="直接免廣告看劇，再加送VIP訂閱優惠唷～" />
+    <meta property="og:title" content="哩永遠ㄟ後頭厝"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://13.113.192.250/event_dev/backhome/index.html"/>
+    <meta property="og:image" content="http://13.113.192.250/event_dev/backhome/image/main.png"/>
+    <meta property="og:site_name" content="哩永遠ㄟ後頭厝" />
+    <meta property="fb:admins" content="ADt9yhhL8SU"/>
+
+    <link rel="stylesheet" href="./css/vendors/jquery-ui.css">
+    <link rel="stylesheet" href="./css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./js/vendors/jquery-3.1.1.min.js"></script>
+    <script src="./js/vendors/jquery-ui.js"></script>
+
+    <script src="./js/vendors/birthday.js"></script>
+    <script src="./js/vendors/tw-city-selector.min.js"></script>
+    <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+    <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />-->
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>-->
+
+</head>
+<body>
+    <input type="hidden" name="fb_uid" value="">
+    <input type="hidden" name="fb_token" value="">
+    <input type="hidden" name="fb_expires" value="">
+    <input type="hidden" name="token" value="">
+    <input type="hidden" name="config_id" value="">
+
+    <div id="main">
+        <div class="share">
+            <div id="FB_share"></div>
+            <div id="vidolIG_link" onclick="window.open('https://www.instagram.com/vidol.tv/', '_blank');"></div>
+            <div id="line_share"></div>
+            <div id="vidol-link" onclick="window.open('http://vidol.tv/', '_blank');"></div>
+        </div>
+        <div class="top">
+            <div class="logo" onclick="self.location.href='index.html'"></div>
+        </div>
+        <div class="mainPic"></div>
+
+        <div class="content" id="step1">
+            <div>
+                <img src="./image/words01.png" class="web">
+                <img src="./image/mobile/mo_words01.png" class="mobile">
+            </div>
+            <div class="btn1"></div>
+        </div>
+
+        <div class="content" id="step2">
+            <div class="des">
+                <img src="./image/words02.png" class="web">
+                <img src="./image/mobile/mo_words02.png" class="mobile">
+            </div>
+            <form id="form1" name="form1" method="post" action="" onclick="return false">
+                <div class="name" tag="name"><span>姓名</span>
+                    <input type="text" id="name" value="">
+                </div>
+                <div class="sex" tag="sex"><span>性別</span>
+                    <!--<input type="text" id="sex" placeholder="男">-->
+                    <select id="sex" name="slectorforSex">
+                        　<option value="male">男</option>
+                        　<option value="female">女</option>
+                    </select>
+                </div>
+                <div class="birthday" tag="birthday"><span>生日</span>
+                    <!--<input type="text" id="birthday" placeholder="2000年12月7日">-->
+                    <select class="sel_year" rel="2000"></select> 年
+                    <select class="sel_month" rel="--"></select> 月
+                    <select class="sel_day" rel="--"></select> 日
+                </div>
+                <div class="phone" tag="phone"><span>手機</span>
+                    <input type="text" class="ic" name="international_code" value="886" onkeyup="numcheck(this.id,this)">
+                    <input type="text" id="phone" placeholder="988-423-217" onkeyup="numcheck(this.id,this)">
+                </div>
+                <div class="address" tag="address"><span>聯絡地址</span>
+                    <select id="country" onchange="setCountry()">
+                        　<option value="taiwan">台灣</option>
+                        　<option value="foreign">海外</option>
+                    </select>
+                    <select id="city"></select>
+                    <select id="area"></select>
+                    <input type="text" id="address" placeholder="請輸入地址">
+                </div>
+                <div class="email" tag="email"><span>E-mail</span>
+                    <input type="text" id="email">
+                </div>
+                <div class="btn2" type="submit" name="button" id="button" value="送出"></div>
+            </form>
+        </div>
+
+        <div class="content" id="step3">
+            <div>
+                <img src="./image/words03.png" class="web">
+                <img src="./image/mobile/mo_words03.png" class="mobile">
+            </div>
+            <div class="btn3"></div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="bg-white">
+            <div class="content">
+                <span class="left">© 2017 Vidol All Rights Reserved 版權所有 盜用必究</span>
+                <span class="right">台北市內湖區舊宗路一段159號 02-8792-8888</span>
+            </div>
+        </div>
+    </div>
+
+    <!--login window+background-->
+    <div id="loginBg"></div>
+    <div id="login" style="display:none">
+        <input type="text" name="username" value="" placeholder="Email">
+        <input type="password" name="password" value="" placeholder="密碼">
+        <div class="login_vidol">會員登入</div>
+        <div class="line"></div>
+        <div class="or">或</div>
+        <div class="login_facebook">Facebook登入</div>
+        <div class="text">
+            <span><a href="http://vidol.tv/users/signup">尚未加入 Vidol?加入會員</a></span>
+        </div>
+    </div>
+    <script src="./js/config.js"></script>
+    <script src="./js/EventVote.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>

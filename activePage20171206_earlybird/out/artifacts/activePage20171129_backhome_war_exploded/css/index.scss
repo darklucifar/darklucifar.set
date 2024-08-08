@@ -1,0 +1,906 @@
+html{
+  height: 100%;
+}
+body{
+  font-family: "微軟正黑體","Microsoft JhengHei","DFHei",Arial;
+}
+#main{
+  max-width: 1920px;
+  margin: 0 auto;
+  height: auto;
+  background: #26b2f6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#267fe7, #26b2f6); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#267fe7, #26b2f6); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#267fe7, #26b2f6);/* For Firefox 3.6 to 15 */
+  background: linear-gradient(#267fe7, #26b2f6);
+  .share{
+    float: right;
+    margin-top: 60px;
+    margin-right: 4vw;
+    div{
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+    }
+    div:last-child{
+      margin-right: 0px;
+    }
+    #FB_share{
+      background: url("../image/FB.png") no-repeat;
+      background-size: 100%;
+      cursor: pointer;
+    }
+    #vidolIG_link{
+      background: url("../image/instagram.png") no-repeat;
+      background-size: 100%;
+      cursor: pointer;
+    }
+    #line_share{
+      background: url("../image/Line.png") no-repeat;
+      background-size: 100%;
+      cursor: pointer;
+    }
+    #vidol-link{
+      background: url("../image/V_LOGO.png") no-repeat;
+      background-size: 100%;
+      cursor: pointer;
+    }
+  }
+  .top{
+    margin: 0 auto;
+    padding-top: 56px;
+    width: 1258px;
+    .logo{
+      display: inline-block;
+      background: url("../image/Vidol_logo_170x55.png") no-repeat;
+      background-size: 100%;
+      width: 170px;
+      height: 55px;
+      cursor: pointer;
+    }
+  }
+  .mainPic{
+    display: block;
+    background: url("../image/main.png") no-repeat;
+    background-size: 100%;
+    width: 1027px;
+    height: 340px;
+    margin: 0 auto;
+  }
+  .content{
+    font-size: 18px;
+    text-align: center;
+    .des{
+      img{
+        width: 790px;
+        margin: 50px auto 20px auto;
+      }
+    }
+    .web{
+      display: block;
+    }
+    .mobile{
+      display: none;
+    }
+  }
+  .content#step1{
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    text-align: center;
+    img{
+      margin: 0 auto;
+      width: auto;
+    }
+    .ps{
+      color: rgba(141, 0, 6, 0.8);
+      margin-top: 3.29429vw;
+      font-size: 16px;
+    }
+    .btn1{
+      background: url("../image/Button01.png") no-repeat;
+      background-size: 100%;
+      width: 218px;
+      height: 61px;
+      margin: 0px auto;
+      margin-top: 45px;
+      cursor: pointer;
+      padding-bottom: 45px;
+    }
+    .btn1:hover{
+      background-image: url("../image/Button01Y.png");
+    }
+  }
+  .content#step2{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    form{
+      width: 750px;
+      text-align: left;
+      margin: 0 auto;
+      margin-top: 15px;
+      font-size: 26px;
+      span{
+        font-weight: bold;
+        letter-spacing: 12px;
+        color: yellow;
+      }
+      div{
+        margin-top: 20px;
+      }
+      input,
+      select{
+        border: 0;
+        width: 666px;
+        background-color: rgba(134, 240, 255, 0.5);
+        color: #fff;
+        border-radius: 0px;
+        height: 39px;
+        line-height: 39px;
+      }
+      input{
+        padding-left: 20px;
+      }
+      select{
+        text-align-last: center;
+        appearance: none;
+        -moz-appearance:none;
+        -webkit-appearance: none;
+        background: url("../image/arrow.png") no-repeat right center transparent;
+        background-color: rgba(134, 240, 255, 0.5);
+        padding-right:40px;
+        option{
+          margin: 40px;
+          background: #6c8894;
+          color: #fff;
+          text-align: center;
+        }
+      }
+      select::-ms-expand { display: none; }
+
+      input:focus,
+      select:focus{
+        outline: none;
+      }
+
+      ::-webkit-input-placeholder { /* WebKit browsers */
+        color: rgba(255, 255, 255, 0.5);
+      }
+      :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: rgba(255, 255, 255, 0.5);
+      }
+      ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: rgba(255, 255, 255, 0.5);
+      }
+      :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .name{
+        display: inline-block;
+        margin-right: 28px;
+        input{
+          width: 330px;
+        }
+      }
+      .sex{
+        display: inline-block;
+        vertical-align: top;
+        select{
+          width: 186px;
+          height: 37px;
+          line-height: 37px;
+        }
+      }
+      .birthday{
+        select{
+          width: 184px;
+        }
+      }
+      .phone{
+        input{
+          width: 548px;
+        }
+        .ic{
+          width: 103px;
+          margin-right: 8px;
+          text-align: center;
+          padding-left: 0;
+        }
+      }
+      .address{
+        select{
+          margin-right: 8px;
+          width: 230px;
+        }
+        #country{
+          width: 100px;
+        }
+        #area{
+          margin-right: 0px;
+        }
+        input{
+          width: 589px;
+          margin-left: 160px;
+          margin-top: 11px;
+        }
+      }
+      .email{
+        span{
+          letter-spacing: normal;
+          margin-right: 10px;
+        }
+        input{
+          width: 654px;
+        }
+      }
+    }
+    .btn2{
+      background: url("../image/Button02.png") no-repeat;
+      width: 218px;
+      height: 61px;
+      background-size: 100%;
+      margin: 0 auto;
+      margin-top: 46px;
+      cursor: pointer;
+      padding-bottom: 45px;
+    }
+    .btn2:hover{
+      background-image: url("../image/Button02Y.png");
+    }
+  }
+  .content#step3{
+    display: none;
+    margin: 0 auto;
+    margin-top: 35px;
+    img{
+      margin: 0 auto;
+      width: auto;
+    }
+    .btn3{
+      background: url("../image/Button03.png") no-repeat;
+      background-size: 100%;
+      width: 218px;
+      height: 61px;
+      position: relative;
+      margin: 0px auto;
+      margin-top: 100px;
+      cursor: pointer;
+      padding-bottom: 55px;
+    }
+    .btn3:hover{
+      background-image: url("../image/Button03Y.png");
+    }
+  }
+
+}
+.footer{
+  display: block;
+  background-color: #2684e9;
+  width: 100%;
+  .bg-white{
+    background-color: #fff;
+    position: relative;
+    top: 20px;
+    height: 90px;
+    line-height: 90px;
+
+    .content{
+      color: rgba(0,0,0,0.6);
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      .left{
+        text-align: left;
+      }
+      .right{
+        float: right;
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 1100px){
+  body,
+  #main{
+    height: 100%;
+  }
+  .footer{
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1366px){
+  #main{
+    .top{
+      padding-top: 4.099561vw;//56px;/1366
+      width: 92vw;//1258/1366
+      .logo{
+        width: 12.445095vw;//170px;/1366px;
+        height: 4.026354vw;//55px;/1366px;
+        cursor: pointer;
+      }
+    }
+    .mainPic{
+      width: 70vw;
+      height: 23.5vw;
+    }
+    .content#step1,
+    .content#step3{
+      margin: 0 auto;
+      margin-top: 2.5622vw;//35px;/1366
+      img{
+        width: 70vw;
+      }
+      .btn1{
+        width: 15.959vw;//218px;/1366
+        height: 4.465593vw;//61px;/1366
+        margin-top: 3.29429vw;//45px;/1366
+        padding-bottom: 3.29429vw;//45px;/1366
+      }
+    }
+
+    .content#step3{
+      img{
+        width: 60%;
+      }
+      .btn3{
+        width: 15.959vw;//218px;/1366
+        height: 4.465593vw;//61px;/1366
+        margin-top: 4vw;
+        padding-bottom: 3.29429vw;//45px;/1366
+      }
+    }
+  }
+  .footer{
+    .bg-white{
+      .content{
+        .left{
+          margin-left: 3vw;
+        }
+        .right{
+          margin-right: 3vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px){
+  body{
+    //overflow-y: hidden;
+    height: 100%;
+  }
+  .footer{
+    display: block;
+    //position: absolute;
+    //bottom: 0;
+    .bg-white{
+      top: -20px;
+      .content{
+        .right{
+          display: none;
+        }
+        .left{
+          margin-left: 5vw;
+        }
+      }
+    }
+  }
+  #main{
+    height: 100%;
+    overflow-y: auto;
+    .share{
+      margin: 0px;
+      position: absolute;
+      right: 4vw;
+      bottom: -6vw;
+      z-index: 2;
+      #vidolIG_link,
+      #vidol-link{
+        display: none;
+      }
+      #FB_share{
+        background: url("../image/mobile/mo_FB_2x.png") no-repeat;
+        background-size: 100%;
+        width: 6.3vw;//256px;/2484
+        height: 6.3vw;//256px;/2484
+        margin-right: 1.5vw;
+      }
+      #line_share{
+        background: url("../image/mobile/mo_Line_2x.png") no-repeat;
+        background-size: 100%;
+        width: 6.3vw;//256px;/2484
+        height: 6.3vw;//256px;/2484
+        margin-right: 0px;
+      }
+    }
+    .top{
+      margin: 0 auto;
+      padding-top: 5.729167vw;//44px;/768
+      width: 100%;
+      .logo{
+        display: inline-block;
+        background: url("../image/mobile/mo_Vidol_logo.png") no-repeat;
+        background-size: 100%;
+        width: 18vw;
+        height: 6.6vw;
+        margin-left: 5vw;
+        cursor: pointer;
+      }
+
+    }
+    .mainPic{
+      background: url(../image/mobile/mo_main.png) no-repeat;
+      background-size: 100%;
+      width: 76vw;
+      position: relative;
+      height: 49vw;
+      margin-top: -7vw;
+    }
+    .content{
+      padding-bottom: 4vw;
+
+      .web{
+        display: none;
+      }
+      .mobile{
+        display: block;
+      }
+    }
+    .content#step1,
+    .content#step3{
+      display: block;
+      img{
+        margin: 0 auto;
+        width: 75%;
+      }
+      .btn1{
+        background: url("../image/Button01.png") no-repeat;
+        background-size: 100%;
+        width: 218px;
+        height: 61px;
+        margin: 0px auto;
+        margin-top: 45px;
+      }
+      .btn1:hover{
+        background-image: url("../image/Button01Y.png");
+      }
+      .ps{
+        font-size: 1.5vw;
+      }
+    }
+    .content#step3{
+      display: none;
+      .btn3{
+        width: 218px;
+        height: 61px;
+        margin-top: 6vw;
+        margin-bottom: 6vw;
+      }
+    }
+    .content#step2{
+       display: none;
+       margin: 0 auto;
+       text-align: center;
+       margin-top: 1.955vw;//20px;/1023
+       .des{
+         font-size: 18px;
+         img{
+           width: 76vw;
+           margin: 0 auto;
+         }
+       }
+       form{
+         width: 77vw;
+         text-align: left;
+         margin: 0 auto;
+         margin-top: 15px;
+         font-size: 2.8vw;
+         span{
+           font-weight: bold;
+         }
+         div{
+           margin-top: 20px;
+         }
+         input,
+         select{
+           border: 0;
+           width: 666px;
+           background-color: rgba(134, 240, 255, 0.5);
+           color: #fff;
+           border-radius: 0px;
+           height: 32px;
+           line-height: 32px;
+         }
+         input{
+           padding-left: 20px;
+         }
+         select{
+           text-align-last: center;
+           appearance:none;
+           -moz-appearance:none;
+           -webkit-appearance:none;
+           background-size: 4.5vw;
+           padding-right: 4.5vw;
+         }
+         select::-ms-expand { display: none; }
+
+         input:focus,
+         select:focus{
+           outline: none;
+         }
+         ::-webkit-input-placeholder { /* WebKit browsers */
+           color: rgba(255, 255, 255, 0.5);
+         }
+         :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+           color: rgba(255, 255, 255, 0.5);
+         }
+         ::-moz-placeholder { /* Mozilla Firefox 19+ */
+           color: rgba(255, 255, 255, 0.5);
+         }
+         :-ms-input-placeholder { /* Internet Explorer 10+ */
+           color: rgba(255, 255, 255, 0.5);
+         }
+         .name{
+           display: inline-block;
+           margin-right: 2vw;
+           input{
+             width: 39.5vw;
+           }
+         }
+         .sex{
+           display: inline-block;
+           vertical-align: top;
+           select{
+             width: 10vw;
+             height: 32px;
+             line-height: 32px;
+           }
+         }
+         .birthday{
+           select{
+             width: 17.7vw;
+           }
+         }
+         .phone{
+           input{
+             width: 50.2vw;
+           }
+           .ic{
+             width: 13.48vw;
+             margin-right: 8px;
+             text-align: center;
+             padding-left: 0;
+           }
+         }
+         .address{
+           select{
+             margin-right: 8px;
+             width: 20.05vw;
+           }
+           #country{
+             width: 13vw;
+           }
+           #area{
+             margin-right: 0px;
+           }
+           input{
+             width: 56.75vw;
+             margin-left: 18.2vw;
+             margin-top: 11px;
+           }
+         }
+         .email{
+           span{
+             letter-spacing: normal;
+             margin-right: 10px;
+           }
+           input{
+             width: 64.5vw;
+           }
+         }
+         .btn2{
+           background: url("../image/Button02.png") no-repeat;
+           width: 218px;
+           height: 61px;
+           background-size: 100%;
+           margin: 0 auto;
+           margin-top: 46px;
+           padding-bottom: 4.398827vw;//45px;/1023
+         }
+         .btn2:hover{
+           background-image: url("../image/Button02Y.png");
+         }
+       }
+
+     }
+  }
+
+  @media screen and (max-width: 500px) {
+    #main{
+      .share{
+        right: 2vw;
+        bottom: -7vw;
+        @media screen and (max-width: 320px){
+          right: 6vw;
+          top: 5vw;
+          bottom: unset;
+        }
+
+        #FB_share,
+        #line_share {
+          width: 7.3vw;
+          height: 7.3vw;
+        }
+      }
+      .mainPic{
+        background: url(../image/mobile/mo_main.png) no-repeat;
+        background-size: 100%;
+        width: 95vw;
+        position: relative;
+        height: 60vw;
+        margin-top: -10vw;
+      }
+      .content#step1,
+      .content#step3{
+        img{
+          margin: 0 auto;
+          width: 92vw;
+        }
+        .ps{
+          margin: 0 auto;
+          margin-top: 6.29429vw;
+        }
+        .btn1{
+          background: url("../image/Button01.png") no-repeat;
+          background-size: 100%;
+          width: 38vw;//218px;/38=5.73684211
+          height: 10.6330275vw;//61px;/5.73684211
+          margin: 0px auto;
+          margin-top: 10vw;
+        }
+        .btn1:hover{
+          background-image: url("../image/Button01Y.png");
+        }
+      }
+      .content#step3{
+        img{
+          width: 90%;
+        }
+        .btn3{
+          width: 38vw;//218px;/38=5.73684211
+          height: 10.6330275vw;//61px;/5.73684211
+          margin-top: 10vw;
+        }
+      }
+      .content#step2{
+        .des{
+          font-size: 1.75vw;
+          img{
+            margin: 0 auto;
+            width: 98vw;
+          }
+        }
+        form{
+          width: 300px;
+          span{
+            letter-spacing: 4.8px;;
+          }
+          div{
+            margin-top: 2vw;
+          }
+          select{
+            height: 32px;
+            line-height: 32px;
+          }
+          .name{
+            margin-right: 1vw;
+            input{
+              width: 154px;
+              padding-left: 10px;
+            }
+          }
+          .sex{
+            select{
+              height: 32px;
+              line-height: 32px;
+              width: 45px;
+            }
+          }
+          .birthday{
+            select{
+              width: 68.72px;
+              height: 32px;
+              line-height: 32px;
+            }
+          }
+          .phone{
+            input{
+              width: 189px;
+            }
+            .ic{
+              width: 62px;
+            }
+          }
+          .address{
+            select{
+              margin-right: 8px;
+              width: 75px;
+              height: 32px;
+              line-height: 32px;
+            }
+            #country{
+              width: 56px;
+            }
+            #area{
+              margin-right: 0px;
+            }
+            input{
+              margin-left: 70px;
+              margin-top: 2vw;
+              width: 229.5px;
+            }
+          }
+          .email{
+            span{
+              margin-right: 5.5px;
+            }
+            input{
+              width: 254px;
+            }
+          }
+          .btn2{
+            background: url("../image/Button02.png") no-repeat;
+            background-size: 100%;
+            width: 38vw;//218px;/38=5.73684211
+            height: 10.6330275vw;//61px;/5.73684211
+            margin: 0px auto;
+            margin-top: 6vw;
+            margin-bottom: 6vw;
+          }
+          .btn2:hover{
+            background-image: url("../image/Button02Y.png");
+          }
+        }
+      }
+    }
+    .footer{
+      .bg-white{
+        top:-10px;
+        height: 12vw;
+        line-height: 12vw;
+        .content{
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}
+
+#loginBg {
+  display: none;
+  background-color: #310c0c;
+  height:100%;
+  width:100%; position:fixed; _position:absolute; top:0; z-index:1000;
+  opacity: 0.9;
+  z-index: 0;
+  width: 320px;
+}
+.ui-widget.ui-widget-content {
+  background-color: rgba(0,0,0,0.82);
+  //background-image: url(../image/Horror-hand-bg.png);
+  background-size: 190%;
+  background-position: 60% 33%;
+}
+.ui-draggable .ui-dialog-titlebar {
+  border: 0;
+  //background: url(../image/vidol-logo-01.jpg) no-repeat 50%;
+  background: none;
+  background-size: 27%;
+  padding: 15px 0;
+  background: none;
+  padding: 0px;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+  background-color: #000;
+  border-width: 0px;
+  margin-right: 10px;
+}
+.ui-dialog .ui-dialog-content {
+  padding: 30px 30px 50px;
+}
+.ui-button .ui-icon,
+.ui-button .ui-icon:hover{
+  width: 50px;
+  height: 50px;
+  background: url(../image/close.png) no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+}
+.fbShare{
+  width: 340px;
+  margin: 0 auto;
+}
+#login{
+  input {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: 0;
+    border-bottom: solid 2px;
+    border-bottom-color: rgba(255, 255, 255, 0.33);
+    margin-top: 15px;
+    color: #fff;
+  }
+  .login_vidol {
+    background-color: #f4f224;
+    color: #000;
+    margin-top: 25px;
+  }
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.33);
+    position: relative;
+    margin-top: 95px;
+  }
+  .or{
+    color: #c1c1c1;
+    width: 37px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: -12px;
+  }
+  .text{
+    text-align: center!important;
+    span a{
+      color: #fff!important;
+    }
+  }
+}
+#login input{
+  width: 100%;
+  height: 40px;
+}
+.login_vidol{
+  background-color: #c32435;
+  width: 100%;
+  height: 40px;
+  text-align:center;
+  line-height: 40px;
+  float: left;
+  -webkit-appearance: none;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.or{
+  width: 100%;
+  text-align:center;
+}
+.login_facebook{
+  background-color: #3b5998;
+  width: 100%;
+  height: 40px;
+  text-align:center;
+  line-height: 40px;
+  float: left;
+  -webkit-appearance: none;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.1em;
+  cursor: pointer;
+}

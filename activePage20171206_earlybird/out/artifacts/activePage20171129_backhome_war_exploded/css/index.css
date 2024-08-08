@@ -1,0 +1,710 @@
+@charset "UTF-8";
+html {
+  height: 100%; }
+
+body {
+  font-family: "微軟正黑體","Microsoft JhengHei","DFHei",Arial; }
+
+#main {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: auto;
+  background: #26b2f6;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#267fe7, #26b2f6);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#267fe7, #26b2f6);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#267fe7, #26b2f6);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#267fe7, #26b2f6); }
+  #main .share {
+    float: right;
+    margin-top: 60px;
+    margin-right: 4vw; }
+    #main .share div {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+      width: 30px;
+      height: 30px; }
+    #main .share div:last-child {
+      margin-right: 0px; }
+    #main .share #FB_share {
+      background: url("../image/FB.png") no-repeat;
+      background-size: 100%;
+      cursor: pointer; }
+    #main .share #vidolIG_link {
+      background: url("../image/instagram.png") no-repeat;
+      background-size: 100%;
+      cursor: pointer; }
+    #main .share #line_share {
+      background: url("../image/Line.png") no-repeat;
+      background-size: 100%;
+      cursor: pointer; }
+    #main .share #vidol-link {
+      background: url("../image/V_LOGO.png") no-repeat;
+      background-size: 100%;
+      cursor: pointer; }
+  #main .top {
+    margin: 0 auto;
+    padding-top: 56px;
+    width: 1258px; }
+    #main .top .logo {
+      display: inline-block;
+      background: url("../image/Vidol_logo_170x55.png") no-repeat;
+      background-size: 100%;
+      width: 170px;
+      height: 55px;
+      cursor: pointer; }
+  #main .mainPic {
+    display: block;
+    background: url("../image/main.png") no-repeat;
+    background-size: 100%;
+    width: 1027px;
+    height: 340px;
+    margin: 0 auto; }
+  #main .content {
+    font-size: 18px;
+    text-align: center; }
+    #main .content .des img {
+      width: 790px;
+      margin: 50px auto 20px auto; }
+    #main .content .web {
+      display: block; }
+    #main .content .mobile {
+      display: none; }
+  #main .content#step1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    text-align: center; }
+    #main .content#step1 img {
+      margin: 0 auto;
+      width: auto; }
+    #main .content#step1 .ps {
+      color: rgba(141, 0, 6, 0.8);
+      margin-top: 3.29429vw;
+      font-size: 16px; }
+    #main .content#step1 .btn1 {
+      background: url("../image/Button01.png") no-repeat;
+      background-size: 100%;
+      width: 218px;
+      height: 61px;
+      margin: 0px auto;
+      margin-top: 45px;
+      cursor: pointer;
+      padding-bottom: 45px; }
+    #main .content#step1 .btn1:hover {
+      background-image: url("../image/Button01Y.png"); }
+  #main .content#step2 {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff; }
+    #main .content#step2 form {
+      width: 750px;
+      text-align: left;
+      margin: 0 auto;
+      margin-top: 15px;
+      font-size: 26px; }
+      #main .content#step2 form span {
+        font-weight: bold;
+        letter-spacing: 12px;
+        color: yellow; }
+      #main .content#step2 form div {
+        margin-top: 20px; }
+      #main .content#step2 form input,
+      #main .content#step2 form select {
+        border: 0;
+        width: 666px;
+        background-color: rgba(134, 240, 255, 0.5);
+        color: #fff;
+        border-radius: 0px;
+        height: 39px;
+        line-height: 39px; }
+      #main .content#step2 form input {
+        padding-left: 20px; }
+      #main .content#step2 form select {
+        text-align-last: center;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: url("../image/arrow.png") no-repeat right center transparent;
+        background-color: rgba(134, 240, 255, 0.5);
+        padding-right: 40px; }
+        #main .content#step2 form select option {
+          margin: 40px;
+          background: #6c8894;
+          color: #fff;
+          text-align: center; }
+      #main .content#step2 form select::-ms-expand {
+        display: none; }
+      #main .content#step2 form input:focus,
+      #main .content#step2 form select:focus {
+        outline: none; }
+      #main .content#step2 form ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: rgba(255, 255, 255, 0.5); }
+      #main .content#step2 form :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: rgba(255, 255, 255, 0.5); }
+      #main .content#step2 form ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: rgba(255, 255, 255, 0.5); }
+      #main .content#step2 form :-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: rgba(255, 255, 255, 0.5); }
+      #main .content#step2 form .name {
+        display: inline-block;
+        margin-right: 28px; }
+        #main .content#step2 form .name input {
+          width: 330px; }
+      #main .content#step2 form .sex {
+        display: inline-block;
+        vertical-align: top; }
+        #main .content#step2 form .sex select {
+          width: 186px;
+          height: 37px;
+          line-height: 37px; }
+      #main .content#step2 form .birthday select {
+        width: 184px; }
+      #main .content#step2 form .phone input {
+        width: 548px; }
+      #main .content#step2 form .phone .ic {
+        width: 103px;
+        margin-right: 8px;
+        text-align: center;
+        padding-left: 0; }
+      #main .content#step2 form .address select {
+        margin-right: 8px;
+        width: 230px; }
+      #main .content#step2 form .address #country {
+        width: 100px; }
+      #main .content#step2 form .address #area {
+        margin-right: 0px; }
+      #main .content#step2 form .address input {
+        width: 589px;
+        margin-left: 160px;
+        margin-top: 11px; }
+      #main .content#step2 form .email span {
+        letter-spacing: normal;
+        margin-right: 10px; }
+      #main .content#step2 form .email input {
+        width: 654px; }
+    #main .content#step2 .btn2 {
+      background: url("../image/Button02.png") no-repeat;
+      width: 218px;
+      height: 61px;
+      background-size: 100%;
+      margin: 0 auto;
+      margin-top: 46px;
+      cursor: pointer;
+      padding-bottom: 45px; }
+    #main .content#step2 .btn2:hover {
+      background-image: url("../image/Button02Y.png"); }
+  #main .content#step3 {
+    display: none;
+    margin: 0 auto;
+    margin-top: 35px; }
+    #main .content#step3 img {
+      margin: 0 auto;
+      width: auto; }
+    #main .content#step3 .btn3 {
+      background: url("../image/Button03.png") no-repeat;
+      background-size: 100%;
+      width: 218px;
+      height: 61px;
+      position: relative;
+      margin: 0px auto;
+      margin-top: 100px;
+      cursor: pointer;
+      padding-bottom: 55px; }
+    #main .content#step3 .btn3:hover {
+      background-image: url("../image/Button03Y.png"); }
+
+.footer {
+  display: block;
+  background-color: #2684e9;
+  width: 100%; }
+  .footer .bg-white {
+    background-color: #fff;
+    position: relative;
+    top: 20px;
+    height: 90px;
+    line-height: 90px; }
+    .footer .bg-white .content {
+      color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto; }
+      .footer .bg-white .content .left {
+        text-align: left; }
+      .footer .bg-white .content .right {
+        float: right; }
+
+@media screen and (min-height: 1100px) {
+  body,
+  #main {
+    height: 100%; }
+
+  .footer {
+    position: absolute;
+    bottom: 0; } }
+@media screen and (max-width: 1366px) {
+  #main .top {
+    padding-top: 4.099561vw;
+    width: 92vw; }
+    #main .top .logo {
+      width: 12.445095vw;
+      height: 4.026354vw;
+      cursor: pointer; }
+  #main .mainPic {
+    width: 70vw;
+    height: 23.5vw; }
+  #main .content#step1,
+  #main .content#step3 {
+    margin: 0 auto;
+    margin-top: 2.5622vw; }
+    #main .content#step1 img,
+    #main .content#step3 img {
+      width: 70vw; }
+    #main .content#step1 .btn1,
+    #main .content#step3 .btn1 {
+      width: 15.959vw;
+      height: 4.465593vw;
+      margin-top: 3.29429vw;
+      padding-bottom: 3.29429vw; }
+  #main .content#step3 img {
+    width: 60%; }
+  #main .content#step3 .btn3 {
+    width: 15.959vw;
+    height: 4.465593vw;
+    margin-top: 4vw;
+    padding-bottom: 3.29429vw; }
+
+  .footer .bg-white .content .left {
+    margin-left: 3vw; }
+  .footer .bg-white .content .right {
+    margin-right: 3vw; } }
+@media screen and (max-width: 1023px) {
+  body {
+    height: 100%; }
+
+  .footer {
+    display: block; }
+    .footer .bg-white {
+      top: -20px; }
+      .footer .bg-white .content .right {
+        display: none; }
+      .footer .bg-white .content .left {
+        margin-left: 5vw; }
+
+  #main {
+    height: 100%;
+    overflow-y: auto; }
+    #main .share {
+      margin: 0px;
+      position: absolute;
+      right: 4vw;
+      bottom: -6vw;
+      z-index: 2; }
+      #main .share #vidolIG_link,
+      #main .share #vidol-link {
+        display: none; }
+      #main .share #FB_share {
+        background: url("../image/mobile/mo_FB_2x.png") no-repeat;
+        background-size: 100%;
+        width: 6.3vw;
+        height: 6.3vw;
+        margin-right: 1.5vw; }
+      #main .share #line_share {
+        background: url("../image/mobile/mo_Line_2x.png") no-repeat;
+        background-size: 100%;
+        width: 6.3vw;
+        height: 6.3vw;
+        margin-right: 0px; }
+    #main .top {
+      margin: 0 auto;
+      padding-top: 5.729167vw;
+      width: 100%; }
+      #main .top .logo {
+        display: inline-block;
+        background: url("../image/mobile/mo_Vidol_logo.png") no-repeat;
+        background-size: 100%;
+        width: 18vw;
+        height: 6.6vw;
+        margin-left: 5vw;
+        cursor: pointer; }
+    #main .mainPic {
+      background: url(../image/mobile/mo_main.png) no-repeat;
+      background-size: 100%;
+      width: 76vw;
+      position: relative;
+      height: 49vw;
+      margin-top: -7vw; }
+    #main .content {
+      padding-bottom: 4vw; }
+      #main .content .web {
+        display: none; }
+      #main .content .mobile {
+        display: block; }
+    #main .content#step1,
+    #main .content#step3 {
+      display: block; }
+      #main .content#step1 img,
+      #main .content#step3 img {
+        margin: 0 auto;
+        width: 75%; }
+      #main .content#step1 .btn1,
+      #main .content#step3 .btn1 {
+        background: url("../image/Button01.png") no-repeat;
+        background-size: 100%;
+        width: 218px;
+        height: 61px;
+        margin: 0px auto;
+        margin-top: 45px; }
+      #main .content#step1 .btn1:hover,
+      #main .content#step3 .btn1:hover {
+        background-image: url("../image/Button01Y.png"); }
+      #main .content#step1 .ps,
+      #main .content#step3 .ps {
+        font-size: 1.5vw; }
+    #main .content#step3 {
+      display: none; }
+      #main .content#step3 .btn3 {
+        width: 218px;
+        height: 61px;
+        margin-top: 6vw;
+        margin-bottom: 6vw; }
+    #main .content#step2 {
+      display: none;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 1.955vw; }
+      #main .content#step2 .des {
+        font-size: 18px; }
+        #main .content#step2 .des img {
+          width: 76vw;
+          margin: 0 auto; }
+      #main .content#step2 form {
+        width: 77vw;
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 15px;
+        font-size: 2.8vw; }
+        #main .content#step2 form span {
+          font-weight: bold; }
+        #main .content#step2 form div {
+          margin-top: 20px; }
+        #main .content#step2 form input,
+        #main .content#step2 form select {
+          border: 0;
+          width: 666px;
+          background-color: rgba(134, 240, 255, 0.5);
+          color: #fff;
+          border-radius: 0px;
+          height: 32px;
+          line-height: 32px; }
+        #main .content#step2 form input {
+          padding-left: 20px; }
+        #main .content#step2 form select {
+          text-align-last: center;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          background-size: 4.5vw;
+          padding-right: 4.5vw; }
+        #main .content#step2 form select::-ms-expand {
+          display: none; }
+        #main .content#step2 form input:focus,
+        #main .content#step2 form select:focus {
+          outline: none; }
+        #main .content#step2 form ::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: rgba(255, 255, 255, 0.5); }
+        #main .content#step2 form :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: rgba(255, 255, 255, 0.5); }
+        #main .content#step2 form ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: rgba(255, 255, 255, 0.5); }
+        #main .content#step2 form :-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: rgba(255, 255, 255, 0.5); }
+        #main .content#step2 form .name {
+          display: inline-block;
+          margin-right: 2vw; }
+          #main .content#step2 form .name input {
+            width: 39.5vw; }
+        #main .content#step2 form .sex {
+          display: inline-block;
+          vertical-align: top; }
+          #main .content#step2 form .sex select {
+            width: 10vw;
+            height: 32px;
+            line-height: 32px; }
+        #main .content#step2 form .birthday select {
+          width: 17.7vw; }
+        #main .content#step2 form .phone input {
+          width: 50.2vw; }
+        #main .content#step2 form .phone .ic {
+          width: 13.48vw;
+          margin-right: 8px;
+          text-align: center;
+          padding-left: 0; }
+        #main .content#step2 form .address select {
+          margin-right: 8px;
+          width: 20.05vw; }
+        #main .content#step2 form .address #country {
+          width: 13vw; }
+        #main .content#step2 form .address #area {
+          margin-right: 0px; }
+        #main .content#step2 form .address input {
+          width: 56.75vw;
+          margin-left: 18.2vw;
+          margin-top: 11px; }
+        #main .content#step2 form .email span {
+          letter-spacing: normal;
+          margin-right: 10px; }
+        #main .content#step2 form .email input {
+          width: 64.5vw; }
+        #main .content#step2 form .btn2 {
+          background: url("../image/Button02.png") no-repeat;
+          width: 218px;
+          height: 61px;
+          background-size: 100%;
+          margin: 0 auto;
+          margin-top: 46px;
+          padding-bottom: 4.398827vw; }
+        #main .content#step2 form .btn2:hover {
+          background-image: url("../image/Button02Y.png"); } }
+@media screen and (max-width: 1023px) and (max-width: 500px) {
+  #main .share {
+    right: 2vw;
+    bottom: -7vw; } }
+  @media screen and (max-width: 1023px) and (max-width: 500px) and (max-width: 320px) {
+    #main .share {
+      right: 6vw;
+      top: 5vw;
+      bottom: unset; } }
+@media screen and (max-width: 1023px) and (max-width: 500px) {
+    #main .share #FB_share,
+    #main .share #line_share {
+      width: 7.3vw;
+      height: 7.3vw; }
+  #main .mainPic {
+    background: url(../image/mobile/mo_main.png) no-repeat;
+    background-size: 100%;
+    width: 95vw;
+    position: relative;
+    height: 60vw;
+    margin-top: -10vw; }
+  #main .content#step1 img,
+  #main .content#step3 img {
+    margin: 0 auto;
+    width: 92vw; }
+  #main .content#step1 .ps,
+  #main .content#step3 .ps {
+    margin: 0 auto;
+    margin-top: 6.29429vw; }
+  #main .content#step1 .btn1,
+  #main .content#step3 .btn1 {
+    background: url("../image/Button01.png") no-repeat;
+    background-size: 100%;
+    width: 38vw;
+    height: 10.6330275vw;
+    margin: 0px auto;
+    margin-top: 10vw; }
+  #main .content#step1 .btn1:hover,
+  #main .content#step3 .btn1:hover {
+    background-image: url("../image/Button01Y.png"); }
+  #main .content#step3 img {
+    width: 90%; }
+  #main .content#step3 .btn3 {
+    width: 38vw;
+    height: 10.6330275vw;
+    margin-top: 10vw; }
+  #main .content#step2 .des {
+    font-size: 1.75vw; }
+    #main .content#step2 .des img {
+      margin: 0 auto;
+      width: 98vw; }
+  #main .content#step2 form {
+    width: 300px; }
+    #main .content#step2 form span {
+      letter-spacing: 4.8px; }
+    #main .content#step2 form div {
+      margin-top: 2vw; }
+    #main .content#step2 form select {
+      height: 32px;
+      line-height: 32px; }
+    #main .content#step2 form .name {
+      margin-right: 1vw; }
+      #main .content#step2 form .name input {
+        width: 154px;
+        padding-left: 10px; }
+    #main .content#step2 form .sex select {
+      height: 32px;
+      line-height: 32px;
+      width: 45px; }
+    #main .content#step2 form .birthday select {
+      width: 68.72px;
+      height: 32px;
+      line-height: 32px; }
+    #main .content#step2 form .phone input {
+      width: 189px; }
+    #main .content#step2 form .phone .ic {
+      width: 62px; }
+    #main .content#step2 form .address select {
+      margin-right: 8px;
+      width: 75px;
+      height: 32px;
+      line-height: 32px; }
+    #main .content#step2 form .address #country {
+      width: 56px; }
+    #main .content#step2 form .address #area {
+      margin-right: 0px; }
+    #main .content#step2 form .address input {
+      margin-left: 70px;
+      margin-top: 2vw;
+      width: 229.5px; }
+    #main .content#step2 form .email span {
+      margin-right: 5.5px; }
+    #main .content#step2 form .email input {
+      width: 254px; }
+    #main .content#step2 form .btn2 {
+      background: url("../image/Button02.png") no-repeat;
+      background-size: 100%;
+      width: 38vw;
+      height: 10.6330275vw;
+      margin: 0px auto;
+      margin-top: 6vw;
+      margin-bottom: 6vw; }
+    #main .content#step2 form .btn2:hover {
+      background-image: url("../image/Button02Y.png"); }
+
+  .footer .bg-white {
+    top: -10px;
+    height: 12vw;
+    line-height: 12vw; }
+    .footer .bg-white .content {
+      font-size: 1vw; } }
+#loginBg {
+  display: none;
+  background-color: #310c0c;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  z-index: 1000;
+  opacity: 0.9;
+  z-index: 0;
+  width: 320px; }
+
+.ui-widget.ui-widget-content {
+  background-color: rgba(0, 0, 0, 0.82);
+  background-size: 190%;
+  background-position: 60% 33%; }
+
+.ui-draggable .ui-dialog-titlebar {
+  border: 0;
+  background: none;
+  background-size: 27%;
+  padding: 15px 0;
+  background: none;
+  padding: 0px; }
+
+.ui-dialog .ui-dialog-titlebar-close {
+  background-color: #000;
+  border-width: 0px;
+  margin-right: 10px; }
+
+.ui-dialog .ui-dialog-content {
+  padding: 30px 30px 50px; }
+
+.ui-button .ui-icon,
+.ui-button .ui-icon:hover {
+  width: 50px;
+  height: 50px;
+  background: url(../image/close.png) no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0; }
+
+.fbShare {
+  width: 340px;
+  margin: 0 auto; }
+
+#login input {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: 0;
+  border-bottom: solid 2px;
+  border-bottom-color: rgba(255, 255, 255, 0.33);
+  margin-top: 15px;
+  color: #fff; }
+#login .login_vidol {
+  background-color: #f4f224;
+  color: #000;
+  margin-top: 25px; }
+#login .line {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.33);
+  position: relative;
+  margin-top: 95px; }
+#login .or {
+  color: #c1c1c1;
+  width: 37px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: -12px; }
+#login .text {
+  text-align: center !important; }
+  #login .text span a {
+    color: #fff !important; }
+
+#login input {
+  width: 100%;
+  height: 40px; }
+
+.login_vidol {
+  background-color: #c32435;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  -webkit-appearance: none;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.1em;
+  cursor: pointer; }
+
+.or {
+  width: 100%;
+  text-align: center; }
+
+.login_facebook {
+  background-color: #3b5998;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  -webkit-appearance: none;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.1em;
+  cursor: pointer; }
+
+/*# sourceMappingURL=index.css.map */
